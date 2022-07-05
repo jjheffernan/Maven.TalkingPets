@@ -36,4 +36,28 @@ public class Pet {
     public static String getType(String prompt) {
         return type;
     }
+
+    public class cat extends Pet(String name,String type, int age,) {
+        String catSpeak = "meow";
+
+
+    }
+
+    public class dog extends Pet(String name,String type, int age,) {
+        String dogSpeak = "woof";
+
+
+    }
+
+    public class fish extends Pet(String name,String type, int age,) {
+        String fishSpeak = "blub blub";
+
+
+    }
+
+    public class bird extends Pet(String name,String type, int age,) {
+        String catSpeak = "caw caw";
+
+
+    }
 }

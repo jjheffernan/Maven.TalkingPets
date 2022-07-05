@@ -1,22 +1,23 @@
 package io.zipcoder.polymorphism;
 
-import org.junit.Test;
+import org.junit.*;
+
 
 public class MainApplicationTest {
 @Test
     public void testMe(){
     // Given
     String name = "Leon";
-    Integer age = 25;
-    Person leon = new Person(name, age);
+    String type = "cat";
+    Pet lion = new Pet();
 
 // When
-    String getNameResult = leon.getName();
-    Integer getAgeResult = leon.getAge();
+    String getNameResult = lion.getName(name);
+    String getTypeResult = lion.getType(type);
 
 // Then
     Assert.assertEquals(name, getNameResult);
-    Assert.assertEquals(age, getAgeResult);
+    Assert.assertEquals(type, getTypeResult);
 
 }
 }
